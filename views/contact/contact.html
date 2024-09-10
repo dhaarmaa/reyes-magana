@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../contact/contactStyle.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Inicio</a></li>
+                <li><a href="../about/about.html">Equipo</a></li>
+                <li><a href="../misionAndVision/missionAndVision.html">Misión y Visión</a></li>
+                <li><a href="../practiced/practiced.html">¿Qué hacemos?</a></li>
+                <li><a href="../notices/notices.html">Noticias</a></li>
+                <li><a href="../others/others.html">Misceláneos</a></li>
+                <li><a href="../contact/contact.html" class="active">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor padre para el formulario y el mapa -->
+    <div class="contenedor-flex">
+        <div class="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form action="/submit-form" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono"><br>
+                
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509012!2d144.95565231558595!3d-37.8172099797519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772e0e2d947fe7!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1619512875067!5m2!1sen!2sau" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="whatsapp-icon"></div>
+            <p>CERCANÍA, CONFIANZA Y COMPRENSIÓN</p>
+        </div>
+    </footer>
+</body>
+</html>

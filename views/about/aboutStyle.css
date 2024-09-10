@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #a30000;
+    padding: 15px 0;
+    display: block;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #a30000;
+}
+
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los bloques de equipo */
+}
+
+.team-member {
+    display: flex;
+    align-items: center; /* Alinear verticalmente la imagen y el párrafo */
+    gap: 20px; /* Espacio entre la imagen y el párrafo */
+}
+
+.team-image {
+    flex-shrink: 0; /* Evita que la imagen se reduzca */
+    width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.team-member p {
+    margin: 0; /* Remueve el margen del párrafo */
+    flex: 1; /* Permite que el párrafo ocupe el resto del espacio */
+}
+
+
+
+.footer-content {
+    background-color: #a30000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content .whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    background: url('../img/whatsapp-icon.png') no-repeat center; /* Asegúrate de que esta ruta esté correcta */
+    background-size: contain;
+    margin-right: 10px;
+}
